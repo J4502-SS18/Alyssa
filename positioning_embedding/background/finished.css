@@ -1,0 +1,88 @@
+/*styles go here*/
+
+/*p {
+  color: red;
+}*/
+
+img {
+  border: none;
+  width: 100%;
+}
+
+.photo_aside {
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+}
+
+p {
+  font-family: 'Merriweather Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+}
+
+#container {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#container::after {
+  content: "";
+  background: url(img/finn.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.caption {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  text-align: left;
+  margin-top: 5px;
+}
+
+#nav {
+  padding: 0;
+}
+
+#nav li {
+  list-style-type: none;
+}
+
+#nav a:link {
+  display: block;
+  color: #ffffff;
+  background-color: #98bf21;
+  font-weight: bold;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 4px;
+  text-decoration: none;
+}
+
+#nav a:hover, #nav a:active {
+  background-color: #7a991a;
+  text-decoration: underline;
+}
+
+/*  Container example
+
+#container {
+  width: 95%;
+  margin: 0 auto;
+  background-image: url("img/finn.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
+
+*/

@@ -1,0 +1,99 @@
+/*styles go here*/
+
+/*p {
+  color: red;
+}*/
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img {
+  border: none;
+  width: 100%;
+}
+
+.photo_aside {
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+}
+
+p {
+  font-family: 'Merriweather Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+}
+
+#container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.caption {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  text-align: left;
+  margin-top: 5px;
+}
+
+#nav {
+  padding: 0;
+}
+
+#nav li {
+  list-style-type: none;
+}
+
+#nav a:link {
+  display: block;
+  color: #ffffff;
+  background-color: #98bf21;
+  font-weight: bold;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 4px;
+  text-decoration: none;
+}
+
+#nav a:hover, #nav a:active {
+  background-color: #7a991a;
+  text-decoration: underline;
+}
+
+/* Bad photo and caption example text. Bad!
+
+img {
+  border: none;
+  float: left;
+  width: 40%;
+  margin-right: 10px;
+}
+
+.float_right {
+  float: right;
+}
+.caption {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  text-align: left;
+  margin-top: 5px;
+  clear: both;
+  float: left;
+  width: 40%;
+}
+
+*/

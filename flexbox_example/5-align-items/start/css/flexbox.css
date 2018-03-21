@@ -1,0 +1,21 @@
+/* =================================
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	height: 500px;
+	align-items: flex-start;
+	align-items: flex-end;
+	align-items: center;
+	align-items: stretch;
+	align-items: baseline;
+}
+
+.item-1 {
+	font-size: 1.35em;
+}
+
+.item-3 {
+	font-size: 0.8em;
+}

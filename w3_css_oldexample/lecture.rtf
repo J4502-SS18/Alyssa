@@ -1,0 +1,269 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red52\green52\blue52;\red244\green241\blue236;}
+{\*\expandedcolortbl;;\csgenericrgb\c20392\c20392\c20392;\csgenericrgb\c95686\c94510\c92549;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \
+\
+Project options \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+This lecture will teach you how to add CSS, cascading style sheets, to your websites. We\'92ll need to do this for the styled site project.\
+\
+CSS lecture \
+\
+Watch the CSS how-to and the Hische video. \
+\
+Show next assignment \
+\
+So go ahead and download the css example from Slack. Unzip the pages, and open up in the text editor of your choice. \
+\
+Now what you want to do is to make a new document in TW -- call this style.css. \
+\
+Next thing to do is to link your stylesheet to your webpage. External stylesheets and other external items are linked to from the page head, so go ahead and type this in the head tag:\
+ \
+<link rel="stylesheet" type="text/css" href="style.css" /> \
+\
+We'll also use an internal style sheet later on. We'll use those to illustrate the differences among how the browser deals with conflicting style declarations. \
+\
+Looking further down the page, this should look pretty familiar. \
+\
+So let's get to styling it. \
+\
+p \{\
+	color: red;\
+\}\
+\
+Now, that changed some of the text to red, and some not to red. Any guesses why? (selector only works on paragraphs). \
+\
+Let's write a second selector: \
+\
+p \{\
+	color: #666666;\
+\}\
+\
+Changed it to gray. Why? Second style overrides the first. \
+\
+Let's add another style to that paragraph tag. You can group multiple styles under one selector:\
+	font-family: Helvetica, Arial, sans-serif;\
+\
+And let\'92s also make a style for our header: \
+\
+h1 \{\
+    font-family: Georgia, "Times New Roman", serif;\
+\}\
+\
+Now we\'92ll add a background for the body: \
+\
+body\{\
+	background-color:#ebe3ce;\
+\}\
+\
+Changes background color. \
+\
+Now let's go back to index.html and add an internal style:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 <style type="text/css">\
+body \{background-color:yellow;\}\
+</style>\
+\
+\cf0 \cb1 Sorry for killing your eyeballs, but the point I want to make is that this stylesheet will override your external examples. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Let's comment that out. \
+\
+OK, back to css. Let's do some more stuff that you'll need to do in your next assignment. \
+\
+Most web pages are inside some sort of a container, which will let you manipulate the whole contents of the page in some way. \
+\
+Now, we're going to see how we write tags into our html, to get them to be targeted by the css. This is going to be our first use of a div element. \
+\
+So write two div tags wrapping your content -- start right after body and end right before /body.\
+\
+Now, we'll give that an attribute, which is an ID. Attributes go in the opening tag, of course. Remember IDs can only be used once on a page. \
+\
+		<div id="container">\
+And end it with a comment. \
+<!--end container div-->\
+\
+Now, let's do some stuff to the container. \
+\
+#container\{\
+background-color:#ffffff;\
+\}\
+\
+You'll see some extra color around the edges of the container, depending on what browser you're using. This is normal, and we can use a couple little tricks to force the color elsewhere. \
+\
+Let's give our container a width: \
+\
+#container\{\
+width: 95%;\
+background-color: #ffffff;\
+\}\
+\
+and set up some margins on the thing:\
+\
+#container\{\
+margin: 0 auto;\
+\}\
+\
+OK, so the next thing you'll often do is to make a header, and so let's do that for semantic reasons and also to help us organize our navigation. Wrap the h1 and the links at the top of the page in a div with ID of "header"\
+\
+		<div id="header">\
+\
+\
+So let's style that navigation at the top of the page. \
+\
+http://www.w3schools.com/css/css_navbar.asp\
+There are two ways to create a horizontal navigation bar. Using inline or floating list items.\
+\
+Both methods work fine, but if you want the links to be the same size, you have to use the floating method. \
+\
+So let's first give those links an ID element, so we can hook them into our css. We have other lists on the page, so we want there to be something unique about this list. \
+\
+		<ul id="nav">\
+\
+We could have also wrapped these in their own div, but there's really no need to do so and it's extra code. \
+\
+So the first thing on this, let's get rid of the bullets: \
+\
+#nav li \{\
+	list-style-type:none;\
+\}\
+\
+and then get rid of the padding. The padding is actually applied to the ul, so we need to get rid of the padding on it as well: \
+\
+#nav \{\
+    padding: 0;\
+\}\
+\
+And the next thing we can do is to apply a float to these links. You can float stuff left or right, but not center. Float takes something out of its normal place in a document. Much more about floats later. \
+\
+	float: left;\
+\
+Remove header to show why we did that. \
+\
+OK, now we\'92re going to get rid of that margin and give them a width: \
+\
+	margin: 0; \
+	width: 25%; \
+\
+Remember this width is relative to the width of its parent element, so we can alter this as we need to. \
+\
+We're going to select the navigation a:link state. This will style the link in all states unless we write more specific selectors later. \
+\
+#nav a:link, \{\
+	display:block;\
+\}\
+\
+Now, if they aren't displayed as block level elements (take that off) the width won't apply. \
+\
+Let's also add a color: \
+\
+	color: #ffffff; (white) \
+\
+oh noes, that went away, because it's white \
+\
+	background-color: #98bf21; \
+\
+And our links are back. \
+\
+Let's write two more selectors: \
+\
+	font-weight: bold;\
+	text-align:center;\
+\
+And let's get rid of those underlines: \
+\
+	text-decoration: none;\
+\
+And let\'92s make a new font show up there: \
+\
+	font-family: Helvetica, Arial, sans-serif;\
+\
+And we'll add some padding all the way around, to make the links a little fatter. \
+\
+	padding: 4px;\
+\
+\
+Let's next style the hover and active versions of this link. We're going to make it a slightly darker green: \
+\
+#nav a:hover, #nav a:active\
+\{\
+	background-color:#7a991a;\
+\}\
+\
+\
+Now let\'92s do two more things to this page: style that photo caption, and style that footer. We\'92re going to do a couple of different things to do this, but both rely on using our class and ID selectors. This will hopefully show you the distinction between the two. \
+\
+Let\'92s style that photo caption first. We\'92re going to add a class to it, of \'93caption,\'94 so the paragraph will look like this: \
+\
+    <p class="caption">Yoda gazes into the distance<p>\
+\
+Why are we using a class? Well, we might have more than one caption on the page. Class = a group of items treated similarly. \
+\
+We\'92re going to do a couple things to change this up, make it look visually different. \
+\
+First let\'92s write a new selector for the caption: \
+\
+We use the . selector for a class, # for ID. \
+\
+.caption \{\
+    \
+\}\
+\
+\
+And then we can get to styling it. \
+\
+Let\'92s make the text look different: black, serif, smaller. \
+    color: black; \
+    font-family: Georgia, "Times New Roman", serif; \
+    font-size: 0.8em;\
+\
+and let\'92s get rid of the top margin, and make it italic: \
+    font-style: italic; \
+    margin-top: 0;\
+\
+and finally align it right \
+    text-align: right;\
+\
+final stack \
+\
+.caption \{\
+    color: black;\
+    font-family: Georgia, "Times New Roman", serif;\
+    font-style: italic; \
+    font-size: 0.8em;\
+    margin-top: 0;\
+    text-align: right;\
+\}\
+\
+Now let\'92s finish by styling up that footer: \
+\
+    <p id="footer">Content copyright &copy; 2016 Rob Weir.</p>\
+\
+So we\'92ll use the #footer command in our stylesheet: \
+\
+#footer \{\
+\
+\}\
+\
+And we\'92ll style the first bit like the caption: \
+\
+    color: black; \
+    font-family: Georgia, "Times New Roman", serif;\
+    font-size: 0.8em;\
+\
+\
+I want to do something to visually differentiate this from the rest of my content, so I\'92ll add a border on the top of it: \
+\
+    border-top: 1px solid black; \
+\
+and we\'92re done! \
+\
+\
+}

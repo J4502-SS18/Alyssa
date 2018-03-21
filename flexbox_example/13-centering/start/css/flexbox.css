@@ -1,0 +1,26 @@
+/* =================================
+  Flexbox
+==================================== */
+
+/* .container {
+	display: flex;
+	height: 50vh;
+	justify-content: center;
+}
+
+.item {
+	align-self: center;
+} */
+
+.containter {
+	display: flex;
+	height: 50vh;
+}
+
+.item {
+	margin: auto;
+}
+
+
+
+{}

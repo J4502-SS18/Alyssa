@@ -1,0 +1,70 @@
+p {
+	color: #666666;
+    font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.italic {
+	font-style: italic;
+}
+
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+#nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+#nav li {
+  margin: 0;
+  padding: 0;
+}
+
+#nav a:link, #nav a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7B68EE;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+	text-align: center;
+  font-family: Arial, 'Merriweather',"Times New Roman",Georgia, serif;
+  padding: 7px
+}
+
+#nav a:hover, #nav a:active {
+  background-color: #483D8B;
+}
+
+.caption {
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1em;
+  margin-top: 0;
+  text-align: right;
+}
+
+#footer {
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.8em;
+  border-top: 1px solid black;
+}
+
+#title {
+	background-color: pink;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+img {
+  border: none;
+}
