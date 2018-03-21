@@ -68,3 +68,17 @@ h1 {
 img {
   border: none;
 }
+
+
+
+#nav {
+	display: flex;
+	flex-flow: column;
+}
+
+@media (min-width: 600px) {
+	#nav {
+		flex-flow: row;
+	}
+
+}
