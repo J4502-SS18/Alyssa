@@ -99,7 +99,7 @@ aside {
   flex: 1 auto;
 }
 
-article{
+article {
   flex: 3 0px;
 }
 
@@ -145,8 +145,6 @@ article {
   width: 45%;
 }
 
-.logo {
-  margin-right: auto;
-}
+
 
 }
