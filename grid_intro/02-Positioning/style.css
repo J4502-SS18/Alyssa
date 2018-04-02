@@ -7,7 +7,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  gap: 20px; 
+  gap: 20px;
+  grid-template-areas:
+      "a a b"
+      ". d d"
+      "c e e";
 }
 
 .cards li {
@@ -15,4 +19,25 @@
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
+}
+
+
+.card1 {
+    grid-area: a;
+}
+
+.card2 {
+    grid-area: b;
+}
+
+.card3 {
+    grid-area: c;
+}
+
+.card4 {
+    grid-area: d;
+}
+
+.card5 {
+    grid-area: e;
 }
