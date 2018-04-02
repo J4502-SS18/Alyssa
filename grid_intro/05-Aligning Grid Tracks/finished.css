@@ -1,0 +1,41 @@
+/*Styles go here*/
+
+.cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: repeat(3, 100px);
+    height: 50vh;
+    grid-template-areas:
+        "a a a b"
+        "a a a b"
+        "c d d d";
+    grid-gap: 20px;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.one {
+    grid-area: a;
+}
+
+.two {
+    grid-area: b;
+}
+
+.three {
+    grid-area: c;
+}
+
+.four {
+    grid-area: d;
+}
+
+.cards li {
+    background-color: #f1b82d;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}

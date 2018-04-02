@@ -1,0 +1,12 @@
+/*Styles go here*/
+
+.example {
+    display: grid;
+}
+
+.example > * {
+    background-color: #f1b82d;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
