@@ -12,6 +12,8 @@
       "a a b"
       ". d d"
       "c e e";
+  grid-gap: 20px;
+  align-items: start;
 }
 
 .cards li {
