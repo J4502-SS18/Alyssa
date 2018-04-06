@@ -11,6 +11,15 @@ h1 {
 	font-style: italic;
 }
 
+.pullquote {
+	text-align: center;
+	font-size: 2em;
+}
+
+.aboutme2 {
+	font-weight: bold;
+}
+
 #nav {
   list-style-type: none;
   padding: 0;
@@ -87,16 +96,55 @@ h1, article {
   flex: 1 100%;
 }
 
+#title {
+	display: flex;
+  justify-content: space-between;
+}
+
+#nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.image img {
+  /* visibility: hidden; */
+  display: block;
+}
+
+.pullquote {
+  display: block;
+}
+
 /* For the web */
 
+@media screen and (min-width: 450px) {
+
+  #nav ul {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+
+  .container {
+      width: 80%;
+  }
+
+  .image img {
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+  }
+
+}
 
 @media (min-width: 600px) {
 
 #nav {
 		flex-flow: row wrap;
 		justify-content: flex-end;
-		/* background-color: #7B68EE; */
-		margin-right: 0;
 	}
 
 #nav a {
@@ -124,14 +172,62 @@ article {
 }
 
 .image {
-  width: 45%;
+  width: 80%;
   margin-left: 10px;
 }
 
 .aboutme {
-  width: 45%;
+  width: 80%;
 	margin: auto;
 }
+
+}
+
+@media screen and (min-width: 800px) {
+
+  .item1 {
+    justify-content: flex-start;
+  }
+
+  .pullquote {
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a b b"
+    "c c e"
+    ". d d";
+  }
+
+  .image {
+    width: 100%;
+    grid-area: a;
+  }
+
+  .pullquote {
+    grid-area: b;
+  }
+
+	.section1 {
+		grid-area: e;
+	}
+
+	.aboutme2 {
+		grid-area: c;
+	}
+
+  .section2 {
+    grid-area: d;
+  }
+
 
 
 }
