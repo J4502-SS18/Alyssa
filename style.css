@@ -117,19 +117,19 @@ h1, article {
 
 /* For the web */
 
-@media screen and (min-width: 450px) {
+/* @media screen and (min-width: 450px) {
 
-  #nav ul {
+  nav ul {
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
-}
+} */
 
 @media screen and (min-width: 600px) {
 
   .container {
-      width: 80%;
+      width: 90%;
   }
 
   .image img {
@@ -199,34 +199,27 @@ article {
 
   article {
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: 400px 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
     "a b b"
     "c c e"
-    ". d d";
-  }
-
-  .image {
-    width: 100%;
-    grid-area: a;
-  }
-
-  .pullquote {
-    grid-area: b;
-  }
-
-	.section1 {
-		grid-area: e;
+    "f d d";
 	}
 
-	.aboutme2 {
-		grid-area: c;
-	}
+.section2 {
+	grid-area: a;
+}
 
-  .section2 {
-    grid-area: d;
+
+
+
+
+
+
   }
+
+
 
 
 
