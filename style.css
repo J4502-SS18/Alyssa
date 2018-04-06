@@ -34,8 +34,8 @@ h1 {
 
 #nav a:link, #nav a:visited {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #7B68EE;
+  color: black;
+  /* background-color: #7B68EE; */
   font-weight: bold;
   text-align: center;
   display: block;
@@ -46,7 +46,7 @@ h1 {
 }
 
 #nav a:hover, #nav a:active {
-  background-color: #483D8B;
+  background-color: turquoise;
 }
 
 .caption {
@@ -63,7 +63,7 @@ h1 {
 	background-color: pink;
 	font-size: 3em;
 	text-align: center;
-	margin-top: 4px;
+	/* margin-top: 3px; */
 }
 
 img {
@@ -80,12 +80,12 @@ img {
 	display: block;
 	padding: 10px;
 	text-align: center;
-	border-bottom: 1px solid black;
+	border: 1px solid black;
 }
 
-#nav li:last-of-type a {
+/* #nav li:last-of-type a {
   border-bottom: none;
-}
+} */
 
 .aboutme {
   display: flex;
@@ -98,38 +98,29 @@ h1, article {
 
 #title {
 	display: flex;
-  justify-content: space-between;
+	justify-content: center;
+	margin-top: 6px;
 }
 
-#nav ul {
-  display: flex;
-  flex-flow: column;
-}
-
-.image img {
-  /* visibility: hidden; */
-  display: block;
-}
-
-.pullquote {
-  display: block;
-}
 
 /* For the web */
 
-/* @media screen and (min-width: 450px) {
+@media screen and (min-width: 450px) {
 
-  nav ul {
+  #nav {
     flex-flow: row;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
-} */
+}
 
 @media screen and (min-width: 600px) {
 
   .container {
       width: 90%;
+			align-content: center;
+			padding: 10px;
+			margin-left: 2em;
   }
 
   .image img {
@@ -143,21 +134,9 @@ h1, article {
 @media (min-width: 600px) {
 
 #nav {
-		flex-flow: row wrap;
-		justify-content: flex-end;
+		flex-flow: row;
+		justify-content: space-between;
 	}
-
-#nav a {
-	text-align: center;
-	padding: 10px;
-	border: none;
-	border-right: 2px solid black;
-	border-top: 2px solid black;
-}
-
-#nav li:first-of-type a {
-  border-left: 2px solid black;
-}
 
 #title {
 	padding-top: 0;
@@ -173,7 +152,7 @@ article {
 
 .image {
   width: 80%;
-  margin-left: 10px;
+	margin: auto;
 }
 
 .aboutme {
@@ -181,21 +160,27 @@ article {
 	margin: auto;
 }
 
+.pullquote {
+	width: 80%;
+	margin: auto;
 }
-
-@media screen and (min-width: 800px) {
-
-  .item1 {
-    justify-content: flex-start;
-  }
-
-  .pullquote {
-    display: block;
-  }
 
 }
 
 @media screen and (min-width: 1000px) {
+
+	#nav {
+		justify-content: flex-end;
+	}
+
+	/* .list1 {
+		margin: auto;
+	} */
+
+
+}
+
+@media screen and (min-width: 1100px) {
 
   article {
     display: grid;
@@ -203,24 +188,34 @@ article {
     grid-gap: 20px;
     grid-template-areas:
     "a b b"
-    "c c e"
-    "f d d";
+    "c c c"
+    "d e f";
 	}
 
-.section2 {
-	grid-area: a;
-}
+	.image {
+			width: 90%;
+			grid-area: a;
+		}
 
+	.aboutme {
+			grid-area: b;
+			font-size: 1.2em;
+		}
 
+	.pullquote {
+		grid-area: c;
+	}
 
+	.section1 {
+		grid-area: d;
+	}
 
+	.section2 {
+		grid-area: e;
+	}
 
-
+	.section3 {
+		grid-area: f;
+	}
 
   }
-
-
-
-
-
-}
