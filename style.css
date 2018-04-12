@@ -72,7 +72,7 @@ img {
 }
 
 #nav {
-	display: flex;
+	display: none;
 	flex-flow: column;
 }
 
@@ -112,7 +112,7 @@ header h1 {
   order: 2;
 }
 
-nav ul {
+#nav ul {
     display: none;
 }
 
@@ -122,9 +122,14 @@ nav ul {
 @media screen and (min-width: 450px) {
 
   #nav {
+		display: flex;
     flex-flow: row;
     justify-content: space-between;
   }
+
+	.menu-trigger {
+		display: none;
+	}
 
 }
 
