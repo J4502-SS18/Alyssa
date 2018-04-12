@@ -102,6 +102,20 @@ h1, article {
 	margin-top: 6px;
 }
 
+.menu-trigger {
+  order: 1;
+  font-size: 1.57em;
+  width: 2em;
+}
+
+header h1 {
+  order: 2;
+}
+
+nav ul {
+    display: none;
+}
+
 
 /* For the web */
 
@@ -172,10 +186,6 @@ article {
 	#nav {
 		justify-content: flex-end;
 	}
-
-	/* .list1 {
-		margin: auto;
-	} */
 
 
 }
