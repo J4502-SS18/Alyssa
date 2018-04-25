@@ -1,0 +1,29 @@
+/* =================================
+  Page Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1.35em;
+	font-family: 'Merriweather Sans', sans-serif;
+	background: #ccc;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-wrapper iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

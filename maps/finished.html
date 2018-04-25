@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>testing, testing</title>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="finished.css">
+</head>
+    <body>
+        <h1>Google map embed examples</h1>
+
+        <h3>Standard Google embed code</h3>
+        <!-- This is the standard Google embed code  -->
+        <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.681224978682!2d76.95345501496008!3d43.25810230563935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x8f2f4d08abca583a!2z0KHQstGP0YLQvi3QktC-0LfQvdC10YHQtdC90YHQutC40Lkg0KHQvtCx0L7RgCDQl9C10L3QutC-0LLQsA!5e0!3m2!1skk!2skz!4v1459385644699" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+
+        <!-- Start testing Google API -->
+        <h3>Basic map embed</h3>
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=
+            &q=Almaty+Kazakhstan" allowfullscreen>
+        </iframe>
+
+        <h3>Directions mode</h3>
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/directions?key="YOUR API KEY HERE"
+          &origin=Almaty+Kazakhstan
+          &waypoints=karazhal+kazakhstan
+          &destination=Astana+Kazakhstan"
+          allowfullscreen>
+        </iframe>
+
+        <h3>Satellite view mode</h3>
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/view?key="YOUR API KEY HERE"
+          &center=43.258692,76.953223
+          &zoom=20
+          &maptype=satellite"
+          allowfullscreen>
+        </iframe>
+
+
+
+        <h3>Streetview embed</h3>
+
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/streetview?key="YOUR API KEY HERE"
+            &location=43.2586939,76.9527028
+            &heading=210
+            &pitch=10
+            &fov=35"
+          allowfullscreen>
+      </iframe>
+
+      <h3>Panorama embed</h3>
+      <iframe frameborder="0" width="640" height="360" style="border: 0" src="https://maps.google.com/maps?layer=c&panoid=F:-Qw0xX9vx0q4/VvqZcmow-1I/AAAAAAAAAgw/5TXys0WrEZMOy_wfqLzfPS8Slkj8P1BhA&ie=UTF8&source=embed&output=svembed&cbp=13%2C360%2C%2C0%2C0
+      &heading=180"
+      allowfullscreen=true></iframe>
+
+
+        <!--snippets
+
+        <h3>Satellite view mode, Sydney </h3>
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/view?key="YOUR API KEY HERE"
+          &center=-33.8569,151.2152
+          &zoom=20
+          &maptype=satellite"
+          allowfullscreen>
+        </iframe>
+
+        <h3>Search mode</h3>
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/search?key="YOUR API KEY HERE"
+          &q=record+stores+in+Seattle"
+          allowfullscreen>
+        </iframe>
+
+
+    -->
+
+    </body>
+</html>
